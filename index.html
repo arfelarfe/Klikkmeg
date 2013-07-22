@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Klikk meg applikasjonen</title>
+
+<body>
+	<button id="klikkmeg">Klikk meg!</button>
+	<button id="fjernmeg">Fjern meg!</button>
+	
+	<div id="result"></div>
+	
+	<script src="js/zepto.js"></script>
+	<script src="js/klikkmeg.js"></script>
+	<script>
+	
+		$("#klikkmeg").click(function(){
+			Klikkmeg.Test($("#result"));
+		});
+		
+		$("#fjernmeg").click(function(){
+			$("#result").html("");
+		});
+	</script>
+</body>
+</html>
+
